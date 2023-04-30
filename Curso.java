@@ -3,12 +3,12 @@ import java.util.List;
 
 public class Curso {
     private String nome;
-    private int duracao;
+    private String  duracao;
     private List<Disciplina> disciplinas;
 
 
     // Construtor
-    public Curso(String nome, int duracao) {
+    public Curso(String nome, String duracao) {
         this.nome = nome;
         this.duracao = duracao;
         this.disciplinas = new ArrayList<>();
@@ -33,11 +33,11 @@ public class Curso {
         this.nome= nome;
     }
 
-    public int getDuracao(){
+    public String getDuracao(){
         return duracao;
     }
 
-    public void setDuracao(int duracao){
+    public void setDuracao(String duracao){
         this.duracao=duracao;
     }
 
